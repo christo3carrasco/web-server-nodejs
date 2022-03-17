@@ -38,7 +38,8 @@ app.get("/generic", (req, res) => {
 
 //Otros | 404 | Not found
 app.get("*", (req, res) => {
-  res.render("404");
+  //res.render("404");
+  res.sendFile(__dirname + "/public/react.html");
 });
 
 //Puerto
